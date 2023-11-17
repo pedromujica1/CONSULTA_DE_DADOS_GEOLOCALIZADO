@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API de Geolocalização</title>
+    <link rel="icon" type="image/svg+xml" href="assets/geo.svg" />
+    <link rel="stylesheet" href="css/style.css">
+    <script src="javascript/main.js" type="module" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="page">
+        <header>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Instituto_Federal_do_Paran%C3%A1_-_Marca_Horizontal_2015.svg/2560px-Instituto_Federal_do_Paran%C3%A1_-_Marca_Horizontal_2015.svg.png" alt="Logo do Instituto Federal do Paraná">
+        </header>
+        <div class="container">
+            <section class="section">
+                <h2>Visualização de Dados dos Alunos</h2>
+            </section>
+            <form>
+                <div class="inputbox">
+                    <label for="cep">CEP Aluno*</label>
+                    <input type="text" id="cep" required>
+                </div>
+                <div class="inputbox">
+                    <label for="num_cep">Número do Imóvel*</label>
+                    <input type="text" id="num_cep" required>
+                </div>
+                <div class="inputbox">
+                    <label for="endereco_aluno">Endereço Aluno</label>
+                    <input type="text" id="endereco_aluno">
+                </div>
+                <div class="inputbox">
+                    <label for="endereco_inst">Endereço Instituição</label>
+                    <input type="text" id="endereco_inst">
+                </div>
+                <div class="inputbox">
+                    <label for="distancia">Distância</label>
+                    <input type="text" id="distancia">
+                </div>
+                <div class="inputbox">
+                    <label for="temp_aprox">Tempo aproximado de viagem</label>
+                    <input type="text" id="temp_aprox">
+                </div>
+            </form>
+        </div>
+
+        <div class="inputbox">
+            <i class="loader" id="loading-spinner"></i>
+        </div>
+        
+        <div>
+            <iframe id="iframe"></iframe>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2023 Pedro Miotto e Pedro Schroeder</p>
+    </footer>
+</body>
+</html>

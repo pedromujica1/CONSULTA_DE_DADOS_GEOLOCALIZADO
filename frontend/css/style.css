@@ -1,0 +1,141 @@
+/* Reset de estilos para limpar margens e preenchimentos padrão do navegador */
+body, h1, p, form {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+}
+
+/* Estilos gerais */
+body, h1, p, form {
+    margin: 0;
+    padding: 0;
+}
+
+.inputbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.inputbox label {
+    flex: 1;
+}
+
+.inputbox input {
+    flex: 2.5;
+}
+
+#iframe {
+    margin-bottom: 20px;
+}
+
+/* Estilos gerais */
+header img{
+    width: 30rem;
+}
+.page {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 950px; /* Aumentando a largura máxima do contêiner */
+    height: 500px;
+    background: #fff;
+    border-radius: 50px;
+    box-sizing: 0 0 20px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    /* flex: 1; */
+    overflow: hidden;
+}
+.section {
+    background: linear-gradient(190deg, #31b0d0 10%, #3989e3 100%);
+    padding: 5px;
+    text-align: center;
+    color: #fff;
+}
+
+body {
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Estilos do formulário */
+form {
+    padding: 30px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.inputbox {
+    margin-bottom: 20px;
+}
+
+.inputbox label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+    font-size: 18px;
+    color: #333;
+}
+
+.inputbox input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 15px;
+    color: #555;
+
+}
+
+.inputbox input[type="text"]:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+/* Estilos do iframe */
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Estilos do rodapé */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    font-size: 14px;
+}
+#loading-spinner {
+    display: none;
+    width: 50px;
+    height: 50px;
+    border: 7px solid rgb(216, 215, 215);
+    border-top: 5px solid #007bff;
+    border-radius: 50%;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: spin 1.7s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
