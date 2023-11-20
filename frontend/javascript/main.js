@@ -7,7 +7,7 @@ async function getDados(e) {
     const cep_aluno = document.getElementById('cep').value; // obtem o cep digitado no formulario
     const num_cep_aluno = document.getElementById('num_cep').value; // obtem o numero do imovel digitado no furmulario
 
-    const url_api = `http://127.0.0.1:8000/car_data/${cep_aluno}/${num_cep_aluno}/IFPR%20-%20Cascavel/85814800/2020`; // url para consultar a API
+    const url_api = `https://geolocation-api-ifpr.koyeb.app/car_data/${cep}/${num_cep}/ifpr%20-%20campus%20cascavel/85814-800/2020`; // url para consultar a API
 
     const dados_api = await fetch(url_api); // fazendo a requisição na API
     const data_api = await dados_api.json();// carregando o json da response
@@ -17,7 +17,7 @@ async function getDados(e) {
     const latlon_fim = data_api.coordenadas_destino; //     Ex:[-24.916726, -53.41758]
         
     // url para consultar a API e criar um mapa interativo
-    const url_map = `http://127.0.0.1:8000/rota?long_org=${latlon_ini[1]}&lat_org=${latlon_ini[0]}&long_dest=${latlon_fim[1]}&lat_dest=${latlon_fim[0]}`;
+    const url_map = `https://geolocation-api-ifpr.koyeb.app/rota?long_org=${latlon_ini[1]}&lat_org=${latlon_ini[0]}&long_dest=${latlon_fim[1]}&lat_dest=${latlon_fim[0]}`;
 
     //Se a consulta da API não retornar um CEP, um erro ocorre
     if (data_api.hasOwnProperty('erro')) {
