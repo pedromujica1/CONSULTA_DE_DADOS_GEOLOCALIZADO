@@ -1,8 +1,10 @@
-# APLICAÇÃO REST PARA CONSULTA DE DADOS GEOLOCALIZADOS
+# APLICAÇÃO REST PARA CONSULTA DE DADOS GEOLOCALIZADOS (REST APPLICATION FOR GEOLOCATED DATA QUERY)
 
-# Sobre o Trabalho
+# Sobre o Trabalho (About the work)
 Desenvolvido como Trabalho de Conclusão de Curso para o Ensino Médio Integrado com Técnico em Informática no IFPR Campus Cascavel. O objetivo do trabalho foi pautado na distância entre as localidades dos alunos e respectiva instituição de ensino, fator decisivo que pode impactar desde o desempenho estudantil até a motivação do aluno para continuar os estudos. Considerando também a popularidade de APIs REST e sistemas de geolocalização desenvolvemos um software para apresentar dados de geoprocessamento como distância, tempo de rota e coordenadas referentes aos endereços dos alunos e seu local de estudo. Assim com o software desenvolvido será oferecido como possibilidade módulo para integração com o sistema de acompanhamento educaional do IFPR Campus Cascavel WebSEPAE, objetivando dessa forma a contribuição em análises de dados posteriores para a identificação do impacto da distância na retenção ou evasão dos alunos do IFPR Campus Cascavel.
+## English
+Developed as a final paper for the IT technician course at IFPR Campus Cascavel. The objective of the project was based on the distance between students' locations and their respective educational institution, a decisive factor that can impact student performance and motivation to continue their studies. Considering the popularity of REST APIs and geolocation systems, we developed software to present geoprocessing data such as distance, route time, and coordinates related to students' addresses and their study location. With the developed software, it will be offered as a module for integration with the IFPR Campus Cascavel WebSEPAE educational monitoring system, aiming to contribute to subsequent data analysis for identifying the impact of distance on the retention or dropout of IFPR Campus Cascavel students.
 
-# Os desenvolvedores
+# Os desenvolvedores (The Developers)
 - [Pedro Henrique Schroeder Bolfe ](https://github.com/pedrobolfe)
 - [Pedro Miotto Mujica](https://github.com/pedromujica1)
